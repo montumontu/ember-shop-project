@@ -1,0 +1,9 @@
+<div class="row">
+            {{#each products as |product|}}
+              <div class="col-lg-4 col-md-6 mb-4">
+                {{shop-product product=product  onAction=(action 'totalCartCount') }}
+                </div>
+            {{/each}}
+          </div>
+          {{totalcartcount}}
+          {{!-- {{onAction=(action 'totalCartCount' )}} --}}

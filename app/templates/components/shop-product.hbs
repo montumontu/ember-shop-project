@@ -1,0 +1,19 @@
+        <div class="card h-100">
+            <a href="#">
+                <img class="card-img-top fruit-image" src="{{rootURL}}/images/{{product.image}}.jpg" alt="{{image}}">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title">
+                    <a href="#">{{product.name}}</a>
+                </h4>
+                <h5>$ {{product.price}}</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit
+                    amet.
+                </p>
+                <button class="btn btn-primary" {{action 'cart'}}>Add to Cart</button>
+            </div>
+            <div class="card-footer">{{no_of_products}}
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+        </div>
+{{!-- {{yield}} --}}
